@@ -14,8 +14,8 @@ Calculating probabilities of sequences transforms with evolution model in time
 ./evo.py multi_seqs.fasta simmatrix -o simmatrix.txt
 ```
 
-<body>
 <html>
+<body>
     <div>
         <h4>Jukes-Cantor model</h4>
         <p>
