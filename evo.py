@@ -2,13 +2,9 @@
 import argparse
 import math
 import sys
-from pprint import pprint
 from typing import Callable, List
 
 import numpy as np
-import matplotlib.pyplot as plt
-from Bio import SeqIO
-from matplotlib.ticker import FuncFormatter
 
 
 DEFAULT_ALPHA = 1.0
@@ -86,6 +82,9 @@ def pJC(a: str, b: str, t: float, /,
 
 def plot(data: list, step: float, /,
          title: str, output_file: str = ''):
+    import matplotlib.pyplot as plt
+    from matplotlib.ticker import FuncFormatter
+
     def format_fn(tick_val, tick_pos):
         return tick_val * step
     fig, ax = plt.subplots()
@@ -127,6 +126,7 @@ def optT(a: str, b: str, p: Callable, /, *,
 
 
 def read_sequences(filename: str) -> List[str]:
+    from Bio import SeqIO
     seqs = [record.seq for record in SeqIO.parse(filename, 'fasta')]
     return seqs
 
