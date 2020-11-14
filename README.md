@@ -1,4 +1,4 @@
-# GP_EVO
+# GP_EvoTransform
 Calculating probabilities of sequences transforms with evolution model in time
 
 # Example
