@@ -21,9 +21,9 @@ def pK(a: str, b: str, t: float, /,
                 n1 != n2
                 and
                 (
-                    (n1 in {'A', 'T'} and n2 in {'A', 'T'})
+                    (n1 in {'A', 'G'} and n2 in {'A', 'G'})
                     or
-                    (n1 in {'C', 'G'} and n2 in {'C', 'G'})
+                    (n1 in {'C', 'T'} and n2 in {'C', 'T'})
                 )
         )
 
